@@ -1,0 +1,19 @@
+{
+  "name": "gpt_engineer_enhanced_web",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tailwindcss -i ./main/static/css/styles.css -o ./main/static/css/output.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "autoprefixer": "^10.4.19",
+    "flowbite": "^2.4.1",
+    "postcss": "^8.4.39",
+    "tailwindcss": "^3.4.6"
+  }
+}

@@ -1,0 +1,36 @@
+{% extends 'main/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="container mx-auto mt-8">
+    <h1 class="text-2xl font-bold mb-4">{{ project.name }}</h1>
+    <p class="mb-4">{{ project.description }}</p>
+    
+    <div class="flex">
+        <div class="w-1/2 pr-4">
+            <h2 class="text-xl font-semibold mb-2">Chat</h2>
+            <div id="chat-messages" class="bg-gray-100 p-4 h-64 overflow-y-auto mb-4"></div>
+            <form id="chat-form" class="flex">
+                <input type="text" id="chat-input" class="flex-grow mr-2 p-2 border rounded" placeholder="Enter your message...">
+                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">Send</button>
+            </form>
+        </div>
+        
+        <div class="w-1/2 pl-4">
+            <h2 class="text-xl font-semibold mb-2">Generated Code</h2>
+            <pre id="code-display" class="bg-gray-100 p-4 h-64 overflow-y-auto">{{ project.generated_code }}</pre>
+        </div>
+    </div>
+    
+    <div class="mt-8">
+        <button id="run-portainer" class="bg-green-500 text-white px-4 py-2 rounded mr-2">Run in Portainer</button>
+        <button id="connect-github" class="bg-gray-800 text-white px-4 py-2 rounded mr-2">Connect to GitHub</button>
+        <button id="deploy-vercel" class="bg-black text-white px-4 py-2 rounded">Deploy to Vercel</button>
+    </div>
+</div>
+
+<script>
+    // Add JavaScript for chat functionality, running in Portainer, connecting to GitHub, and deploying to Vercel
+    // Use fetch API to interact with the backend views
+</script>
+{% endblock %}

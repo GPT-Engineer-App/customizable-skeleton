@@ -1,0 +1,54 @@
+# Django and REST framework
+Django
+djangorestframework
+
+# Authentication
+django-allauth
+
+# Environment variables
+python-dotenv
+
+# HTTP requests
+requests
+
+# WSGI server
+gunicorn
+
+# Database
+psycopg2-binary
+
+# Supabase
+supabase
+
+# Tailwind CSS
+django-tailwind
+
+# Crispy Forms with Tailwind
+django-crispy-forms
+crispy-tailwind
+
+# GitHub API
+PyGithub
+
+# GPT Engineer dependencies
+openai
+anthropic
+tiktoken
+click
+
+# Additional utilities
+python-slugify
+Pillow
+
+# Development tools
+black
+flake8
+
+# Weaviate client
+weaviate-client
+
+# Langfuse
+langfuse
+
+# ASGI server
+uvicorn
